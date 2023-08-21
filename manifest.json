@@ -1,0 +1,18 @@
+{
+    "name": "Pinterest DarkMode",
+    "description": "Dark Mode for Pinterest (web)",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "popup.js"
+    },
+    "browser_action":{
+        "default_title": "Pinterest DarkMode",
+        "defualt_popup": "popup.html"
+    },
+    "permissions": [
+        "https://www.pinterest.ca/",
+        "http://www.Pinterest.ca",
+        "tabs"
+    ]
+}
