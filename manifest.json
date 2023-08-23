@@ -6,13 +6,15 @@
     "background": {
         "service_worker": "popup.js"
     },
-    "browser_action":{
+    "action":{
         "default_title": "Pinterest DarkMode",
-        "defualt_popup": "popup.html"
+        "defualt_popup": "./popup.html"
     },
-    "permissions": [
+    "host_permissions": [
         "https://www.pinterest.ca/",
-        "http://www.Pinterest.ca",
+        "https://www.pinterest.com/"
+    ],
+    "permissions": [
         "tabs"
     ]
 }
