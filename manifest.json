@@ -4,17 +4,17 @@
     "version": "1.0.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "popup.js"
+        "service_worker": "background.js"
     },
-    "action":{
-        "default_title": "Pinterest DarkMode",
-        "defualt_popup": "./popup.html"
+    "action": {
+        "default_popup": "popup.html"
     },
-    "host_permissions": [
-        "https://www.pinterest.ca/",
-        "https://www.pinterest.com/"
-    ],
     "permissions": [
         "tabs"
+    ],
+    "host_permissions": [
+        "https://www.google.com/*",
+        "https://www.pinterest.ca/",
+        "https://www.pinterest.com/"
     ]
 }
