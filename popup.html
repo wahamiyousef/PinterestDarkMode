@@ -6,12 +6,80 @@
     <title>Document</title>
 </head>
 <style>
-    
+    body{
+        background-color: #EFEFEF;
+    }
+    h1{
+        color: #BD081C
+    }
+    .button{
+        font-size: 1rem;
+        color: white;
+
+        background-color: #808588;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 2rem;
+        width: 4.5rem;
+        border-radius: 1rem;
+        animation: backgroundLight 1s infinite;
+    }
+    .row{
+        padding: 0 0.25rem;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-color: white;
+        animation: moveCircleRight 1s infinite;
+    }
+
+/* animation */
+@keyframes moveCircleRight {
+        from{
+            left: 0;
+            background-color: #808588;
+        }
+        to{
+            left: 100%;
+            transform: translateX(-100%);
+            background-color: #3E424B;
+        }
+    }
+    @keyframes moveCircleLeft {
+        from{
+            left: 100;
+            transform: translateX(-100%);
+            background-color: #3E424B;
+            
+        }
+        to{
+            left: 0;
+            background-color: #808588;
+        }
+    }
+
+    @keyframes backgroundLight {
+        from{
+            background-color: #808588;
+        }
+        to{
+            background-color: #3E424B;
+        }
+    }
 </style>
 <body>
     <h1>Pinterest Dark Mode</h1>
     <div class="button">
         <div class="row">On</div>
         <div class="row">Off</div>
+        <div class="circle"></div>
 </body>
 </html>
