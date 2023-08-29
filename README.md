@@ -1,3 +1,3 @@
-# PinterestDarkMode
+# Pinterest Dark Mode
 
-Dark mode for pinterest
+Chrome Extension for dark mode for Pinterest
