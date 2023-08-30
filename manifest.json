@@ -10,10 +10,10 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "scripting"
     ],
     "host_permissions": [
-        "https://www.google.com/*",
         "https://www.pinterest.ca/",
         "https://www.pinterest.com/"
     ]
